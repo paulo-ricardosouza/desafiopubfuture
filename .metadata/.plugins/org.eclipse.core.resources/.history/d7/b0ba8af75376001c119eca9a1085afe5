@@ -1,0 +1,14 @@
+package com.projeto.publica.demo.util;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DataUtil {
+	
+	public static Date convertData(String data) throws ParseException {
+		 DateFormat dataFormatada = new SimpleDateFormat();
+		 return dataFormatada.parse(data);
+	}
+}

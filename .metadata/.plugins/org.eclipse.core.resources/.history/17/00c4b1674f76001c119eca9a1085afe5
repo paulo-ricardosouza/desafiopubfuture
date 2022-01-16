@@ -1,0 +1,19 @@
+package com.projeto.publica.demo.factory;
+
+import com.projeto.publica.demo.dto.DespesasDTO;
+import com.projeto.publica.demo.model.Despesas;
+
+public class DespesasFactory {
+
+	public static Despesas of(DespesasDTO despesasDto) {
+		Despesas despesa = new Despesas();
+		despesa.setValor(despesasDto.getValor());
+		despesa.setDataPagamento(despesasDto.getDataPagamento());
+		despesa.setDataPagamentoEsperado(despesasDto.getDataPagamentoEsperado());
+		despesa.setTipoDespesa(despesasDto.getTipoDespesa());
+		despesa.setConta(despesasDto.getConta());
+		
+		return despesa;
+	}
+	
+}

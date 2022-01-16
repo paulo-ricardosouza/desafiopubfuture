@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="net.bytebuddy.agent.builder.AgentBuilder.FallbackStrategy.Simple"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.projeto.publica.demo.model.Receitas"/>
+    <fullyQualifiedTypeName name="com.projeto.publica.demo.service.ReceitasService"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.projeto.publica.demo.enums.TipoReceitas"/>
+    <fullyQualifiedTypeName name="com.projeto.publica.demo.enums.TipoDespesa"/>
+    <fullyQualifiedTypeName name="com.projeto.publica.demo.enums.TipoConta"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="com.projeto.publica.demo.repository.DespesasRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.projeto.publica.demo.service.DespesasService"/>
+    <fullyQualifiedTypeName name="com.projeto.publica.demo.model.Despesas"/>
+    <fullyQualifiedTypeName name="com.projeto.publica.demo.model.Contas"/>
+</qualifiedTypeNameHistroy>

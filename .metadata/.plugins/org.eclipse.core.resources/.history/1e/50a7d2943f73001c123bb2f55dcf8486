@@ -1,0 +1,10 @@
+package com.projeto.publica.demo.enums;
+
+public enum TipoReceitas {
+	
+	SALARIO,
+	PRESENTE,
+	PREMIO,
+	OUTROS;
+
+}

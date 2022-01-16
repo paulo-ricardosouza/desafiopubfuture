@@ -1,0 +1,20 @@
+package com.projeto.publica.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.projeto.publica.demo.model.Receitas;
+import com.projeto.publica.demo.repository.ReceitasRepository;
+
+@Service
+public class ReceitasService {
+
+	@Autowired
+	private ReceitasRepository receitasRepository;
+	
+	public List<Receitas> listar(){
+		return receitasRepository.findAll();
+	}
+}

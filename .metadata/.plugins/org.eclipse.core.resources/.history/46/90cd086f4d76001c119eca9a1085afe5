@@ -1,0 +1,12 @@
+package com.projeto.publica.demo.dto;
+
+import com.projeto.publica.demo.enums.TipoDespesa;
+
+public class DespesasDTO {
+
+	private int valor;
+	private String dataPagamento;
+	private String dataPagamentoEsperado;
+	private TipoDespesa tipoDespesa;
+	private String conta;
+}

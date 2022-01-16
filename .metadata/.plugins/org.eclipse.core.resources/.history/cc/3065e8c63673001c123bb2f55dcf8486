@@ -1,0 +1,94 @@
+package com.projeto.publica.demo.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "receitas")
+public class Receitas {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+	@Column
+	private int valorRecebimento;
+
+	@Column
+	private String dataRecebimento;
+
+	@Column
+	private String dataRecebimentoEsperado;
+
+	@Column
+	private String descricao;
+
+	@Column
+	private int conta;
+
+	@Column
+	private String tipoReceita;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public int getValorRecebimento() {
+		return valorRecebimento;
+	}
+
+	public void setValorRecebimento(int valorRecebimento) {
+		this.valorRecebimento = valorRecebimento;
+	}
+
+	public String getDataRecebimento() {
+		return dataRecebimento;
+	}
+
+	public void setDataRecebimento(String dataRecebimento) {
+		this.dataRecebimento = dataRecebimento;
+	}
+
+	public String getDataRecebimentoEsperado() {
+		return dataRecebimentoEsperado;
+	}
+
+	public void setDataRecebimentoEsperado(String dataRecebimentoEsperado) {
+		this.dataRecebimentoEsperado = dataRecebimentoEsperado;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public int getConta() {
+		return conta;
+	}
+
+	public void setConta(int conta) {
+		this.conta = conta;
+	}
+
+	public String getTipoReceita() {
+		return tipoReceita;
+	}
+
+	public void setTipoReceita(String tipoReceita) {
+		this.tipoReceita = tipoReceita;
+	}
+
+	
+
+}

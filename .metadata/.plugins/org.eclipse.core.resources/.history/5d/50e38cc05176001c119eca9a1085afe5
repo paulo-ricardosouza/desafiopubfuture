@@ -1,0 +1,21 @@
+package com.projeto.publica.demo.factory;
+
+import java.text.ParseException;
+
+import com.projeto.publica.demo.dto.DespesasDTO;
+import com.projeto.publica.demo.model.Despesas;
+import com.projeto.publica.demo.util.DataUtil;
+
+public class DespesasFactory {
+
+	public static Despesas of(DespesasDTO despesasDto) throws ParseException {
+		Despesas despesa = new Despesas();
+		despesa.setValor(despesasDto.getValor());
+		despesa.setDataPagamento(DataUtil.convertData(despesasDto.getDataPagamento()));
+		despesa.setDataPagamentoEsperado(DataUtil.convertData(despesasDto.getDataPagamentoEsperado()));
+		despesa.setTipoDespesa(despesasDto.getTipoDespesa());
+		despesa.setConta(despesasDto.getConta());
+		
+		return despesa;
+	}
+}

@@ -1,0 +1,43 @@
+package com.projeto.publica.demo.dto;
+
+import com.projeto.publica.demo.enums.TipoDespesa;
+
+public class DespesasDTO {
+
+	private int valor;
+	private String dataPagamento;
+	private String dataPagamentoEsperado;
+	private TipoDespesa tipoDespesa;
+	private String conta;
+	
+	public int getValor() {
+		return valor;
+	}
+	public void setValor(int valor) {
+		this.valor = valor;
+	}
+	public String getDataPagamento() {
+		return dataPagamento;
+	}
+	public void setDataPagamento(String dataPagamento) {
+		this.dataPagamento = dataPagamento;
+	}
+	public String getDataPagamentoEsperado() {
+		return dataPagamentoEsperado;
+	}
+	public void setDataPagamentoEsperado(String dataPagamentoEsperado) {
+		this.dataPagamentoEsperado = dataPagamentoEsperado;
+	}
+	public TipoDespesa getTipoDespesa() {
+		return tipoDespesa;
+	}
+	public void setTipoDespesa(TipoDespesa tipoDespesa) {
+		this.tipoDespesa = tipoDespesa;
+	}
+	public String getConta() {
+		return conta;
+	}
+	public void setConta(String conta) {
+		this.conta = conta;
+	}
+}

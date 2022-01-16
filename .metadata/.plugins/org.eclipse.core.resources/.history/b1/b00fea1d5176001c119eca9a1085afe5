@@ -1,0 +1,28 @@
+package com.projeto.publica.demo.factory;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import com.projeto.publica.demo.dto.DespesasDTO;
+import com.projeto.publica.demo.model.Despesas;
+
+public class DespesasFactory {
+
+	public static Despesas of(DespesasDTO despesasDto) throws ParseException {
+		Despesas despesa = new Despesas();
+		despesa.setValor(despesasDto.getValor());
+		despesa.setDataPagamento(convertData(despesasDto.getDataPagamento()));
+		despesa.setDataPagamentoEsperado(convertData(despesasDto.getDataPagamentoEsperado()));
+		despesa.setTipoDespesa(despesasDto.getTipoDespesa());
+		despesa.setConta(despesasDto.getConta());
+		
+		return despesa;
+	}
+	
+	private static Date convertData(String data) throws ParseException {
+		 DateFormat dataFormatada = new SimpleDateFormat();
+		 return dataFormatada.parse(data);
+	}
+}
