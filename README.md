@@ -21,8 +21,8 @@ password: 1234
 
 Rodar o script do arquivo create_database.sql no banco de dados
 
-Baixar a branch master do repositorio https://github.com/paulo-ricardosouza/proway_training.git
+Baixar a branch master do repositorio https://github.com/paulo-ricardosouza/desafiopubfuture.git
 
-Importar o projeto training na IDE IntelliJ IDEA utilizando o Maven
+importar na ide.
 
-Logo após o Maven importar todas as dependencias executar a classe Main TrainingApplication localizada em com.proway.training.TrainingApplication
+Logo após o Maven importar todas as dependencias executar a classe Main PublicaApplication localizada em com.projeto.publica.demo;
